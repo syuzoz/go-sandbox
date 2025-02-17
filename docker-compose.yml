@@ -1,0 +1,6 @@
+services:
+  go-sandbox:
+    build: .
+    container_name: go-sandbox-container
+    ports:
+      - "8080:8080"
