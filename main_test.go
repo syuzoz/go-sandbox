@@ -16,7 +16,7 @@ func TestFizzbuzz(t *testing.T) {
 	}
 
 	for _, tt := range tests {
-		t.Run("", func(t *testing.T) {
+		t.Run("fizzbuzz", func(t *testing.T) {
 			actual := fizzbuzz(tt.input)
 			if actual != tt.expected {
 				t.Errorf("input: %d, got: %s, want: %s", tt.input, actual, tt.expected)
