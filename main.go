@@ -2,22 +2,23 @@ package main
 
 import (
     "fmt"
+    "strconv"
 )
 
 func main() {
     for i := 1; i <= 100; i++ {
-        fizzbuzz(i)
+        fmt.Println(fizzbuzz(i))
     }
 }
 
-func fizzbuzz(i int) {
+func fizzbuzz(i int) string {
     if i%3 == 0 && i%5 == 0 {
-        fmt.Println("fizzbuzz")
+        return "fizzbuzz"
     } else if i%3 == 0 {
-        fmt.Println("fizz")
+        return "fizz"
     } else if i%5 == 0 {
-        fmt.Println("buzz")
+        return "buzz"
     } else {
-        fmt.Println(i)
+        return strconv.Itoa(i)
     }
 }
